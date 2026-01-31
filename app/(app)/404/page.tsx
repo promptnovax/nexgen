@@ -1,9 +1,11 @@
-import 404Content from '@/components/404Content';
+import Content404 from '@/components/404Content';
 
 export const metadata = {
   title: "Not Found",
 };
 
 export default function Page() {
-  return <404Content />;
+  return (
+    <Content404 />
+  );
 }

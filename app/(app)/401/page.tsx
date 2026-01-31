@@ -1,9 +1,11 @@
-import 401Content from '@/components/401Content';
+import Content401 from '@/components/401Content';
 
 export const metadata = {
   title: "Protected page",
 };
 
 export default function Page() {
-  return <401Content />;
+  return (
+    <Content401 />
+  );
 }
