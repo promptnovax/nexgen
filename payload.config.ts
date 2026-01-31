@@ -1,5 +1,6 @@
 
 import { sqliteAdapter } from "@payloadcms/db-sqlite";
+import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import path from "path";
 import { buildConfig } from "payload";
@@ -97,10 +98,14 @@ export default buildConfig({
     globals: [],
     editor: lexicalEditor(),
     secret: process.env.PAYLOAD_SECRET || "HASDKLFJHASDFKJHASDFKJ",
-    db: sqliteAdapter({
-        client: {
-            url: "file:./payload-db.sqlite",
-        },
-    }),
+    db: process.env.DATABASE_URI?.startsWith('mongodb')
+        ? mongooseAdapter({
+            url: process.env.DATABASE_URI,
+        })
+        : sqliteAdapter({
+            client: {
+                url: process.env.DATABASE_URI || "file:./payload-db.sqlite",
+            },
+        }),
     sharp,
 });
