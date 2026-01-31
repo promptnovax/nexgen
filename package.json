@@ -1,0 +1,36 @@
+{
+  "name": "webflow-nextjs-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "payload": "payload",
+    "generate:importmap": "payload generate:importmap",
+    "generate:types": "payload generate:types"
+  },
+  "dependencies": {
+    "@payloadcms/db-sqlite": "^3.73.0",
+    "@payloadcms/next": "^3.73.0",
+    "@payloadcms/richtext-lexical": "^3.73.0",
+    "graphql": "^16.12.0",
+    "lucide-react": "^0.344.0",
+    "next": "^16.1.4",
+    "payload": "^3.73.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

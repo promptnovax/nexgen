@@ -1,0 +1,43 @@
+/* Nexgen Cyber Theme */
+:root {
+    --theme-bg: #0b0e11;
+    --theme-card-bg: rgba(23, 28, 33, 0.8);
+    --theme-text: #ffffff;
+    --theme-accent: #00f2ff;
+    --theme-glow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(0, 242, 255, 0.05) 0%, transparent 70%);
+}
+
+.card-wrapper,
+.badge-card,
+.cta-card-wrapper {
+    background: var(--theme-card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    box-shadow: var(--theme-glow);
+    border-radius: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button-subscribe {
+    background-color: var(--theme-accent);
+    color: #000;
+    font-weight: bold;
+    box-shadow: var(--theme-glow);
+}

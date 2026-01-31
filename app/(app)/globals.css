@@ -1,0 +1,61 @@
+:root {
+  /* Default (Dark) Theme */
+  --bg-primary: #010101;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #999999;
+  --accent-glow: rgba(255, 255, 255, 0.05);
+  --accent-primary: #3898ec;
+}
+
+[data-theme="ocean"] {
+  --bg-primary: #001f3f;
+  --bg-secondary: #003366;
+  --text-primary: #e0f2fe;
+  --text-secondary: #7dd3fc;
+  --accent-glow: rgba(56, 152, 236, 0.1);
+}
+
+[data-theme="forest"] {
+  --bg-primary: #0b1a10;
+  --bg-secondary: #1a2e1d;
+  --text-primary: #ecfdf5;
+  --text-secondary: #6ee7b7;
+  --accent-glow: rgba(16, 185, 129, 0.1);
+}
+
+[data-theme="sunset"] {
+  --bg-primary: #1a0b0b;
+  --bg-secondary: #2e1a1a;
+  --text-primary: #fff7ed;
+  --text-secondary: #fdba74;
+  --accent-glow: rgba(249, 115, 22, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Override Webflow generated classes safely */
+.section, .webflow-page-wrapper {
+  background-color: var(--bg-primary);
+}
+
+.background-dark {
+    background-color: var(--bg-primary) !important;
+}
+
+.glow {
+    background-color: var(--accent-glow) !important;
+}
+
+.color-white {
+    color: var(--text-primary) !important;
+}
+
+.color-light-gray {
+    color: var(--text-secondary) !important;
+}

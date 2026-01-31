@@ -1,0 +1,25 @@
+.color-picker-container {
+    margin-bottom: 20px;
+}
+
+.color-picker-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.color-picker-input {
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background: none;
+}
+
+.color-hex-input {
+    flex-grow: 1;
+    margin-bottom: 0 !important;
+}

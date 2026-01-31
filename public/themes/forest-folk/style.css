@@ -1,0 +1,39 @@
+/* Forest Folk Theme */
+:root {
+    --theme-bg: #fdfbf7;
+    --theme-card-bg: #ffffff;
+    --theme-text: #2d3436;
+    --theme-accent: #2d6a4f;
+}
+
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+}
+
+.card-wrapper,
+.badge-card,
+.cta-card-wrapper {
+    background: var(--theme-card-bg);
+    border: 1px solid #d8e2dc;
+    border-radius: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-accent);
+}
+
+.button-subscribe {
+    background-color: var(--theme-accent);
+    color: white;
+}
+
+.outline-white {
+    -webkit-text-stroke: 1px var(--theme-accent);
+    color: transparent;
+}

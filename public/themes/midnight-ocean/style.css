@@ -1,0 +1,35 @@
+/* Midnight Ocean Theme */
+:root {
+    --theme-bg: #0f172a;
+    --theme-card-bg: rgba(30, 41, 59, 0.7);
+    --theme-text: #e2e8f0;
+    --theme-accent: #38bdf8;
+}
+
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+}
+
+.card-wrapper,
+.badge-card,
+.cta-card-wrapper {
+    background: var(--theme-card-bg);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-accent);
+}
+
+.button-subscribe {
+    background-color: var(--theme-accent);
+    color: #0f172a;
+}

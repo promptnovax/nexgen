@@ -1,0 +1,42 @@
+/* Professional Clean Theme */
+:root {
+    --theme-bg: #f8fafc;
+    --theme-card-bg: #ffffff;
+    --theme-text: #1e293b;
+    --theme-accent: #2563eb;
+}
+
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+    line-height: 1.6;
+}
+
+.card-wrapper,
+.badge-card,
+.cta-card-wrapper {
+    background: var(--theme-card-bg);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 2px solid var(--theme-accent);
+}
+
+.button-subscribe {
+    background-color: var(--theme-accent);
+    border-radius: 4px;
+}
